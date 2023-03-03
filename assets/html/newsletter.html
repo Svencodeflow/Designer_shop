@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Newsletter</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>THE DESIGN SHOP</h1>
+            <ol>
+                <li><a href="../../index.html">Weekly Recommendations</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">TDB</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main id="newsletter_main">
+        <form action="" id="newsletter_form"  onsubmit="return false">
+            <h2>Newsletter Abonieren</h2>
+            <label for="vorname">Vorname</label>
+            <input type="text" name="vname" id="vname" placeholder="Vorname" required>
+            <label for="nachname">Nachname</label>
+            <input type="text" name="nname" id="nname" placeholder="Nachname" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="beispiel@beispiel.de" required>
+            <button type="submit" onclick="daten()" >Übermitteln</button>
+        </form>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+</html>

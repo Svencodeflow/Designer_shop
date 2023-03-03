@@ -1,0 +1,362 @@
+/* ==================
+    Generals
+=====================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: "karla";
+    src: url("../fonts/karla/Karla-VariableFont_wght.ttf");
+}
+
+p, h1, h2, h3 {
+    font-family: "karla";
+}
+
+/* =================
+    Header
+====================*/
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header nav ol {
+    display: flex;
+}
+
+header nav ol li:nth-of-type(2) a {
+    margin: 15px;
+}
+
+header nav ol li {
+    list-style: none;
+    margin-right: 25px;
+    font-size: 1.2rem;
+}
+
+header nav ol li a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav h1 {
+    font-size: 2.5rem;
+    margin-left: 5%;
+}
+
+
+/* ==========================
+    Main first_gallerie
+=============================*/
+
+main article .first_gallerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "rucksack rucksack rucksack"
+    "lampe backpack longboard"
+    "kettle car logo_mordern"
+    ;
+    gap: 2%;
+    margin: 30px 15px;
+}
+
+.first_gallerie figure:nth-of-type(1) {
+    grid-area: rucksack;
+    margin-top: 8vh;
+}
+
+.first_gallerie figure img {
+    width: 100%;
+}
+
+
+.first_gallerie figure:nth-of-type(2) {
+    grid-area: lampe;
+}
+
+.first_gallerie figure:nth-of-type(3) {
+    grid-area: backpack;
+}
+
+main article section figcaption {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-top: 1vh;
+}
+
+img:hover {
+    -webkit-filter: blur(5px) saturate(6);
+    filter: blur(5px) saturate(6);  
+}
+
+/* ==========================
+    main second_gallerie
+============================= */
+
+main article .second_gallerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "dieter dieter dieter"
+    "eye organizer canteen"
+    "chair cherry japan"
+    ;
+    gap: 2%;
+    margin: 30px 15px;
+}
+
+.second_gallerie figure:nth-of-type(1) {
+    grid-area: dieter;
+    margin-top: 20vh;
+}
+
+.second_gallerie figure img {
+    width: 100%;
+}
+
+
+.second_gallerie figure:nth-of-type(2) {
+    grid-area: eye;
+}
+
+.second_gallerie figure:nth-of-type(3) {
+    grid-area: organizer;
+}
+
+/* ==========================
+    main third_gallerie
+============================= */
+
+main article .third_gallerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "grupa grupa grupa"
+    "komono studio bottle"
+    "bang now eames"
+    ;
+    gap: 2%;
+    margin: 30px 15px;
+}
+
+.third_gallerie figure:nth-of-type(1) {
+    grid-area: grupa;
+    margin-top: 20vh;
+}
+
+.third_gallerie figure img {
+    width: 100%;
+}
+
+
+.third_gallerie figure:nth-of-type(2) {
+    grid-area: komono;
+}
+
+.third_gallerie figure:nth-of-type(3) {
+    grid-area: studio;
+}
+
+/* ==========================
+    main four_gallerie
+============================= */
+
+main article .four_gallerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "graphic graphic graphic"
+    "systems wallet print"
+    "apple travel magic"
+    ;
+    gap: 2%;
+    margin: 30px 15px;
+}
+
+.four_gallerie figure:nth-of-type(1) {
+    grid-area: graphic;
+    margin-top: 20vh;
+}
+
+.four_gallerie figure img {
+    width: 100%;
+}
+
+
+.four_gallerie figure:nth-of-type(2) {
+    grid-area: systems;
+}
+
+.four_gallerie figure:nth-of-type(3) {
+    grid-area: wallet;
+}
+
+
+/* ==========================
+    main five_gallerie
+============================= */
+
+main article .five_gallerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "bottle bottle bottle"
+    "geo womb filter"
+    ;
+    gap: 2%;
+    margin: 30px 15px;
+}
+
+.five_gallerie figure:nth-of-type(1) {
+    grid-area: bottle;
+    margin-top: 20vh;
+}
+
+.five_gallerie figure img {
+    width: 100%;
+}
+
+
+.five_gallerie figure:nth-of-type(2) {
+    grid-area: geo;
+}
+
+.five_gallerie figure:nth-of-type(3) {
+    grid-area: womb;
+}
+
+/* =============================
+    Footer nav
+================================*/
+
+footer .footer_nav {
+    display: flex;
+    margin-top: 10vh;
+    margin-left: 1vw;
+    gap: 15%;
+    margin-bottom: 1vw;
+}
+
+.footer_nav div h1, h3 {
+    margin-bottom: 3vh;
+}
+
+.break::after {
+    content: "\A";
+    white-space: pre;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer_nav div p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.footer_nav div:nth-of-type(1) {
+    margin-right: 10vw;
+}
+
+.footer_nav div:nth-of-type(2) a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer_nav div:nth-of-type(2)  {
+    line-height: 1.5;
+}
+
+.footer_nav div:nth-of-type(2) h3 {
+    font-size: 1.5rem;
+}
+
+.footer_nav div:nth-of-type(2) a {
+    font-size: 1.4rem;
+}
+
+.footer_nav div:nth-of-type(3)  {
+    line-height: 1.5;
+}
+
+.footer_nav div:nth-of-type(3) h3 {
+    font-size: 1.5rem;
+}
+
+.footer_nav div:nth-of-type(3) a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer_nav div:nth-of-type(3) p:nth-of-type(2)  {
+    font-style: italic;
+}
+
+.footer_nav div:nth-of-type(4)  {
+    line-height: 1.5;
+}
+
+.footer_nav div:nth-of-type(4) h3 {
+    font-size: 1.5rem;
+}
+
+.footer_nav nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+}
+
+footer .footer_description {
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    font-size: 2rem;
+    color: rgba(128, 128, 128, 0.644);
+}
+
+/* ================================
+    Newsletter
+===================================*/
+
+#newsletter_main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter_form {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    width: 25%;
+}
+
+input[type=text], input[type=email], button[type=submit] {
+    padding: 2%;
+}
+
+input[type=email] {
+    margin-bottom: 2vh;
+}
+
+#newsletter_form h2 {
+    width: max-content;
+    margin-left: -10vw;
+}
